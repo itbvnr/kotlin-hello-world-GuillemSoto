@@ -8,6 +8,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.gestures.snapping.SnapPosition
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -38,7 +39,7 @@ internal fun App() = AppTheme {
                 contentDescription = null
             )
             Text(contact.fullName, fontSize = 35.sp, fontWeight = FontWeight.Bold)
-            Box(modifier = Modifier.background(color = Color.LightGray)){
+            Box(modifier = Modifier.background(color = Color.LightGray, RoundedCornerShape(percent = 35)).padding(10.dp)){
                 Column{
                     Text(contact.email)
                     Text(contact.phone)
