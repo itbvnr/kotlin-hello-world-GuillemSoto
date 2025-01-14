@@ -42,6 +42,7 @@ internal fun App() = AppTheme {
                 Column{
                     Text(contact.email)
                     Text(contact.phone)
+                    //si
                 }
             }
         }
