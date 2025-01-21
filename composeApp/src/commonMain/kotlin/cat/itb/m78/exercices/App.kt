@@ -1,6 +1,5 @@
 package cat.itb.m78.exercices
-
-
+import GmGn
 import HelloWorldApp
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -31,7 +30,7 @@ data class Contact(val fullName: String, val email: String, val phone: String)
 val contact = Contact("Marta Casserres", "marta@example.com", "934578484")
 @Composable
 internal fun App() = AppTheme {
-    Box(modifier = Modifier.fillMaxSize()){
+    /*Box(modifier = Modifier.fillMaxSize()){
         Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxSize()){
             Image(
                 painter = painterResource(Res.drawable.myImage),
@@ -41,12 +40,11 @@ internal fun App() = AppTheme {
             Text(contact.fullName, fontSize = 35.sp, fontWeight = FontWeight.Bold)
             Box(modifier = Modifier.background(color = Color.LightGray, RoundedCornerShape(percent = 35)).padding(10.dp)){
                 Column{
-                    Text(contact.email)
-                    Text(contact.phone)
-                    //si
+                    Text("📧 "+contact.email)
+                    Text("📞 "+contact.phone)
                 }
             }
         }
-    }
-
+    }*/
+    GmGn()
 }
